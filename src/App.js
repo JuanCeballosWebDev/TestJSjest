@@ -20,3 +20,16 @@ export function highestScore(students) {
   
     return result;
   }
+
+  export function color(arrOne, col) {
+    let flag = null;
+
+    arrOne.forEach(element => {
+      if (element === col)
+        flag = true;
+      else
+        flag = false;
+    });
+
+    return flag;
+  }

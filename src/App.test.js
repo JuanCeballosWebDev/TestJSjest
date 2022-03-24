@@ -1,4 +1,4 @@
-import { add, total, highestScore } from './App';
+import { add, total, highestScore, color } from './App';
 
 // https://jestjs.io/docs/expect#expectvalue
 // The expect function is used every time you want to test a value.
@@ -55,4 +55,10 @@ test('total', () => {
   expect(total(5, 20)).toBe('$25');
   expect(total(2, 10)).toBe('$12');
   expect(total(8, 50)).toBe('$58');
+});
+
+
+// test color function
+test('color - is function returning a value?', () => {
+  expect(color(['amarillo', 'verde', 'azul'], 'green')).toBeDefined();
 });
